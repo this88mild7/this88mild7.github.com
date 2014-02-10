@@ -3,15 +3,20 @@ layout: page
 ---
 {% include JB/setup %}
 
-<ul>
+
   {% for post in paginator.posts %}  
-  <li>    
-    <a href="{{ BASE_PATH }}{{ post.url }}"><span>{{ post.title }}</span></a>    
-    <span>{{ post.date | date: "%Y-%m-%d" }}</span>    
-    <p>{{ post.content | truncate: 15 }}</p>    
-    <p><a class="btn js-btn" href="{{ BASE_PATH }}{{ post.url }}">더 보기 &raquo;</a></p>  
-  </li>{% endfor %}
-</ul>
+<div>
+    <a href="{{ BASE_PATH }}{{ post.url }}">
+      <span>
+        <b>{{ post.title }}</b>
+      </span>
+    </a>
+    <br/>    
+    <span>{{ post.date | date: "%Y-%m-%d" }} | Post by {{ site.author.name }}</span>    
+</div>
+<hr>
+{% endfor %}
+
 <div class="pagination">  
   <ul>{% if paginator.previous_page %}    
     <li>  {% if paginator.previous_page == 1 %}      
