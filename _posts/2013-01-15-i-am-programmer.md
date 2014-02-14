@@ -1,6 +1,6 @@
 ---
 layout: post
-title : [책] 나는 프로그래머다
+title : 나는 프로그래머다
 category : book
 tags : [book, programmer]
 ---
