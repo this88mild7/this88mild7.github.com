@@ -1,7 +1,7 @@
 ---
 layout: post
 title : spring-test-mvc 사용법 
-category : spring-test-mvc
+category : spring
 tags : [spring, test, spring-test-mvc]
 ---
 {% include JB/setup %}
