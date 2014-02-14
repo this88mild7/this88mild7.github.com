@@ -7,12 +7,10 @@ layout: page
   {% for post in paginator.posts %}  
 <div>
     <a href="{{ BASE_PATH }}{{ post.url }}">
-      <span>
-        <b>{{ post.title }}</b>
-      </span>
+      <h2>{{ post.title }}</h2>
     </a>
-    <br/>    
-    <h2>{{ post.date | date: "%Y-%m-%d" }} | Post by {{ site.author.name }}</h2>    
+    <br/>      
+    <span>{{ post.date | date: "%Y-%m-%d" }} | Post by {{ site.author.name }}</span>    
 </div>
 <hr>
 {% endfor %}
